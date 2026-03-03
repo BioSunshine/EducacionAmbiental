@@ -1,0 +1,61 @@
+.btn{
+    display: inline-block; 
+    background-color: #B8E04A; 
+    color: white;   
+    font-weight: 30; 
+    padding: 14px 40px;
+    border-radius: 20px; 
+    text-decoration: none; 
+    box-shadow: 0 6px 0 #8fb932; 
+    transition: all 0.2s ease;
+    font-family: "Ysabeau Infant", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;       
+}
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 9px 0 #8fb932;
+}
+.btn:active {
+    transform: translateY(4px);
+    box-shadow: 0 2px 0 #8fb932;
+}
+body{
+    background-image: url(imagenes/fondoapp.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 500px;
+    background-color: white;
+    border-radius: 10%;
+    font-family: "Ysabeau Infant", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal; 
+    font-size:medium;
+    color:rgb(1, 115, 123);  
+}
+
+body{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+h1{
+     text-align: center;
+}
+select, input{
+    height: 20px;
+    width: 200px;
+}
