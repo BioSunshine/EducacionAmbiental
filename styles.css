@@ -90,3 +90,7 @@ select, input{
 .cantidad button:active {
     transform: scale(0.95);
 }
+.icono img {
+  width: 35px;
+  height: auto;
+}
