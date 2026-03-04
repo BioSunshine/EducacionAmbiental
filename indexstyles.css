@@ -2,7 +2,6 @@
     display: inline-block; 
     background-color: #B8E04A; 
     color: white; 
-    
     font-weight: 50; 
     padding: 14px 40px;
     border-radius: 20px; 
@@ -10,7 +9,6 @@
     box-shadow: 0 6px 0 #8fb932; 
     transition: all 0.2s ease;
     font-family: "Ysabeau Infant", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 900;
     font-style: normal;    
 }
@@ -30,7 +28,6 @@
 }
 h1{
     font-family: "Ysabeau Infant", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 900;
     font-style: normal;
     color:white;
@@ -46,7 +43,6 @@ h1{
 }
 p{
     font-family: "Ysabeau Infant", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 900;
     font-style: normal;
     color:white;
@@ -91,7 +87,6 @@ padding: clamp(8px, 2vw, 18px) 30px;
 
 .menu li a{
     font-family: "Ysabeau Infant", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
     text-decoration: none;
