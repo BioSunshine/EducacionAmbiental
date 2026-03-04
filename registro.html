@@ -3,23 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  
     <title>Ocean Conectors</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Infant:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
-</head>
-<body>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+   <body>
 
 <div class="contenedor">
+ <a href="index.html" class="volver"><i class="fa-solid fa-arrow-left"></i>
+</a>
     <h1>Registro</h1>
 <form action="/action_page.php">
-    <label for="fecha">Fecha:</label>
+    <label for="fecha"><i class="fa-solid fa-calendar-days"></i>Fecha:</label>
     <br>
   <input type="date" id="fecha" name="fecha">
   <br>
 
-  <label for="pais">País:</label>
+  <label for="pais"><i class="fa-solid fa-earth-americas"></i>País:</label>
   <br>
   <select id="pais" name="pais">
     <option value="mexico">Mexico</option>
@@ -27,27 +31,27 @@
   </select>
 
   <br>
-  <label for="localidad">Localidad:</label>
+  <label for="localidad"><i class="fa-solid fa-map-location-dot"></i>Localidad:</label>
   <br>
   <select id="localidad" name="localidad">
-    <option value="mexico">Nayarit</option>
-    <option value="eua">Localidad 2</option>
+    <option value="localidad1">Localidad 1</option>
+    <option value="localidad2">Localidad 2</option>
   </select>
 
   <br>
-  <label for="playa">Nombre de la playa:</label>
+  <label for="playa"><i class="fa-solid fa-umbrella-beach"></i>Nombre de la playa:</label>
   <br>
   <select id="playa" name="playa">
-    <option value="mexico">Sayulita</option>
-    <option value="eua">Playa 2</option>
+    <option value="playa1">Playa 1</option>
+    <option value="playa2">Playa 2</option>
   </select>
   <br>
-  <label for="escuela">Escuela:</label><br>
+  <label for="escuela"><i class="fa-solid fa-school-flag"></i>Escuela:</label><br>
   <input type="text" id="escuela" name="escuela"><br>
-  <label for="equipo">Nombre del equipo:</label><br>
+  <label for="equipo"><i class="fa-solid fa-children"></i>Nombre del equipo:</label><br>
   <input type="text" id="equipo" name="equipo"><br><br>
-   <a href="" class="btn"> SIGUIENTE </a>
-  <!--<input type="submit"></form>-->
+   <a href="formulario.html" class="btn"style="margin-bottom:50px;"> SIGUIENTE </a>
+   </form>
   </div>
 </body>
 </html>
