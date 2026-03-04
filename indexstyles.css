@@ -22,6 +22,12 @@
     transform: translateY(4px);
     box-shadow: 0 2px 0 #8fb932;
 }
+.logo {
+    width: 120px;
+    max-width: 30%;
+    height: auto;
+    width: clamp(80px, 15vw, 150px);
+}
 h1{
     font-family: "Ysabeau Infant", sans-serif;
     font-optical-sizing: auto;
@@ -35,6 +41,7 @@ h1{
     -1px 1px 0 dodgerblue,
     1px 1px 0 dodgerblue,
     1px -1px 0 dodgerblue;
+    font-size: clamp(28px, 5vw, 50px);
 
 }
 p{
@@ -44,19 +51,21 @@ p{
     font-style: normal;
     color:white;
     text-align: center;
-    font-size: 25px;
+    font-size: clamp(16px, 3vw, 25px);
     text-shadow: 
     -1px -1px 0 dodgerblue,
     -1px 1px 0 dodgerblue,
     1px 1px 0 dodgerblue,
     1px -1px 0 dodgerblue;
 }
-body{
+body{   
     background-image: url(imagenes/inicio.png);
-    background-position: center center;
+    background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: scroll;
+    margin: 0;
+    height: 100vh;
 }
 .registro{
     display: flex;
@@ -64,9 +73,98 @@ body{
     font-size: 25px;
 }
 .contenedorsup{
-margin: 0;
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 1%;
+background-color: white;
+padding: clamp(8px, 2vw, 18px) 30px;
+/*padding: 10px 25px;*/ 
+    position: relative;
+}
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li a{
+    font-family: "Ysabeau Infant", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: none;
+    color: #8fb932;
+    transition: 0.3s;
+}
+
+.menu li a:hover{
+    color: #536d1c;
+    border-bottom: 2px solid #536d1c;
+}
+
+/* OCULTAR CHECKBOX */
+#menu-toggle{
+    display: none;
+}
+
+/* ICONO HAMBURGUESA */
+.menu-icon{
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #0D3B66;
+}
+@media (max-width: 768px) {
+
+    .registro .btn {
+        width: 60%;
+        text-align: center;
+        font-size: 18px;
+    }
+    .contenedorsup {
+        padding: 8px 15px;
+    }
+
+    .logo {
+        width: 90px;
+    }
+
+    .btn {
+        padding: 10px 18px;
+        font-size: 14px;
+        border-radius: 15px;
+    }
+    h1{
+        margin: 30px 10px;
+    }
+    p {
+        margin: 30px 20px;
+    }
+    .menu{
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: white;
+        flex-direction: column;
+        width: 200px;
+        display: none;
+        padding: 20px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        border-radius: 10px 0 0 10px;
+    }
+
+    .menu li{
+        margin-bottom: 15px;
+    }
+
+    .menu-icon{
+        display: block;
+    }
+
+    /* Cuando el checkbox está activado */
+    #menu-toggle:checked ~ .menu{
+        display: flex;
+    }
 }
