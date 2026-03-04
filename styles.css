@@ -59,3 +59,34 @@ select, input{
     height: 20px;
     width: 200px;
 }
+.contenedorb{
+    padding:20px
+}
+/* BOTONES + y - */
+.cantidad button {
+    width: 40px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    color: white;
+    box-shadow: inset 0 -3px rgba(0,0,0,0.2);
+}
+
+.cantidad .menos {
+    background-color: #ff4d4d; /* rojo */
+}
+
+.cantidad .mas {
+    background-color: #7ed957; /* verde */
+}
+
+.cantidad button:hover {
+    filter: brightness(1.1);
+}
+
+.cantidad button:active {
+    transform: scale(0.95);
+}
